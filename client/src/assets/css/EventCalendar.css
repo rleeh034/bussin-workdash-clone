@@ -1,0 +1,52 @@
+/* CSS for calendar */
+.fc .fc-button-primary {
+  background-color: royalblue;
+  border-color: royalblue;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active, 
+.fc .fc-button-primary:not(:disabled):active,
+.fc .fc-button-primary:hover{
+    background-color: navy;
+    border-color: navy;
+    z-index: 0;
+}
+
+.fc .fc-toolbar-title {
+  font-weight: bold;
+}
+
+.fc .fc-button-primary:disabled {
+  background-color: navy;
+  border-color: navy;
+  opacity: 0.9;
+}
+  
+/* CSS for modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  max-width: 400px;
+  top: 25%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  cursor: pointer;
+}
